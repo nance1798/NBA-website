@@ -1,0 +1,99 @@
+body {
+    background-image: url("images/background.jpeg");
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: gray;
+    text-align: center;
+    font-size: xx-large;
+    display: inline;
+
+}
+
+nav {
+    background-color: gray;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+header .logo {
+    background-image: url("images/logo.jpg");
+    background-color: gray;
+    background-size: 150px;
+    display: inline-block;
+    height: 150px;
+    position: relative;
+    text-indent: -999999px;
+    width: 150px;
+    top: -40px;
+}
+
+section {
+    background-color: gray;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.head{
+    font-size: large;
+    color: gray;
+    background-color: gray;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.bob {
+    
+    color: white;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+div {
+    margin: auto;
+    width: 100px;
+    background-color: gray;
+}
+
+footer {
+    background: gray;
+    padding: 10px 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+ul {
+    margin: 0;
+    padding-inline: 2%;
+    list-style-type: none;
+}
+
+li {
+    display: inline-block;
+    margin-inline: 8%;
+    background-color: gray;
+}
+
+table {
+    background-color: gray;
+    font-size: 18px;
+
+}
+
+h1 {
+    display: inline;
+    padding: 15px;
+}
+
+p {
+    display: inline;
+    padding: 10px;
+    margin-top: 100px;
+    font-size: large;
+}
