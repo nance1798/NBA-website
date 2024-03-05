@@ -1,101 +1,853 @@
 <!DOCTYPE html>
+
 <html>
-    <head>
-        <title>Website!</title>
-        <link rel="stylesheet" href="styles2.css">
-    </head>
 
-    <body>
-        <header>
+<head>
+    <title>Website!</title>
+    <link rel="stylesheet" href="styles2.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <header>
+        <br>
+        <br>
+        <nav>
+            <ul>
+                <li class="logo">My App Logo</li>
+                <li>
+                    <h1><b><u> Player Evaluations</u></b></h1><br>
+                    <p><a href="teams.html">Click here for team stats</a></p>
+                </li>
+                <li class="logo">My App Logo</li>
+            </ul>
+
             <br>
-            <br>
-            <nav>
-                <ul>
-                    <li class = "logo">My App Logo</li>
-                    <li> <h1><b><u> Player Evaluations</u></b></h1><br><p><a href="teams.html">Click here for team stats</a></p></li>
-                    <li class = "logo">My App Logo</li>
-                </ul>
-                
-                <br>
-                
-            </nav>
+
+        </nav>
+
+    </header>
+
+    <section class="head">
+        <div>
+        </div>
+        <div>
+        </div>
+    </section>
+    <section class="bob">
+        <h1>2024 NBA Season</h1>
+        <style>
+            table td,
+            table th {
+                font-size: smaller;
+                border: 1px solid black;
+                line-height: 1.4;
+                padding: 10px 10px;
+            }
+        </style>
+        <div class = "scrollable">
             
-        </header>
-        
-        <section class = "head">
-            <div>
-            </div>
-            <div>
-            </div>
-        </section>
-        <section class = "bob">
-            <h1>2024 NBA Season</h1>
-            <table>
-                <tr>
-                    <th>name</th>
-                    <th>age</th>
-                </tr>
-                <tr>
-                    <td>man</td>
-                    <td>woman</td>
-                </tr>
-                <tr>
-                    <td>basketball</td>
-                    <td>tennis</td>
-                </tr>
-                <tr>
-                    <td>basketball</td>
-                    <td>tennis</td>
-                </tr>
-                <tr>
-                    <td>basketball</td>
-                    <td>tennis</td>
-                </tr>
-                <tr>
-                    <td>basketball</td>
-                    <td>tennis</td>
-                </tr>
-                <tr>
-                    <td>basketball</td>
-                    <td>tennis</td>
-                </tr>
-                <tr>
-                    <td>basketball</td>
-                    <td>tennis</td>
-                </tr>
-                <tr>
-                    <td>basketball</td>
-                    <td>tennis</td>
-                </tr>
-                <tr>
-                    <td>basketball</td>
-                    <td>tennis</td>
-                </tr>
-                <tr>
-                    <td>basketball</td>
-                    <td>tennis</td>
-                </tr>
-                <tr>
-                    <td>basketball</td>
-                    <td>tennis</td>
-                </tr>
-                <tr>
-                    <td>basketball</td>
-                    <td>tennis</td>
-                </tr>
+            
+            <table id="table">
+                <thead>
+                    <tr>
+                        <th onclick="sortTable(0)">Name</th>
+                        <th onclick="sortTable(1)">Age</th>
+                        <th onclick="sortTable(2)">Height</th>
+                        <th onclick="sortTable(3)">Wingspan</th>
+                        <th onclick="sortTable(4)">Length Score</th>
+                        <th onclick="sortTable(5)">Quickness</th>
+                        <th onclick="sortTable(6)">Strength</th>
+                        <th onclick="sortTable(7)">Ball Handling</th>
+                        <th onclick="sortTable(8)">Verticality</th>
+                        <th onclick="sortTable(9)">Footwork</th>
+                        <th onclick="sortTable(10)">Rim Finishing</th>
+                        <th onclick="sortTable(11)">FT%</th>
+                        <th onclick="sortTable(12)">WO 3P%</th>
+                        <th onclick="sortTable(13)">3PA/100</th>
+                        <th onclick="sortTable(14)">OREB%</th>
+                        <th onclick="sortTable(15)">Shooting</th>
+                        <th onclick="sortTable(16)">Mid Range Score</th>
+                        <th onclick="sortTable(17)">3 Point Score</th>
+                        <th onclick="sortTable(18)">Passing</th>
+                        <th onclick="sortTable(19)">Movement</th>
+                        <th onclick="sortTable(20)">Scoring Score</th>
+                        <th onclick="sortTable(21)">Playmaking Score</th>
+                        <th onclick="sortTable(22)">ORebounding</th>
+                        <th onclick="sortTable(23)">Scalability Score</th>
+                        <th onclick="sortTable(24)">Offensive Score</th>
+                        <th onclick="sortTable(25)">Hands/RP Timing</th>
+                        <th onclick="sortTable(26)">Awareness</th>
+                        <th onclick="sortTable(27)">Lateral Quickness</th>
+                        <th onclick="sortTable(28)">Screen Nav</th>
+                        <th onclick="sortTable(29)">DREB%</th>
+                        <th onclick="sortTable(30)">DReb</th>
+                        <th onclick="sortTable(31)"> Motor</th>
+                        <th onclick="sortTable(32)">RP Score</th>
+                        <th onclick="sortTable(33)">Post Score</th>
+                        <th onclick="sortTable(34)">On-Ball Score</th>
+                        <th onclick="sortTable(35)">D-Playmaking Score</th>
+                        <th onclick="sortTable(36)">Defensive Score</th>
+                        <th></th>
+                        <th onclick="sortTable(38)">Total Score</th>
+                    </tr>
+                </thead>    
+                <tbody>    
+                    <tr>
+                        <td>Jrue Holiday</td>
+                        <td>33</td>
+                        <td>75.25</td>
+                        <td>79</td>
+                        <td>4.529</td>
+                        <td>4</td>
+                        <td>7</td>
+                        <td>6.5</td>
+                        <td>3</td>
+                        <td>6.5</td>
+                        <td>4.806</td>
+                        <td>80.4</td>
+                        <td>41.4</td>
+                        <td>7</td>
+                        <td>3.900</td>
+                        <td>6.899</td>
+                        <td>5.604</td>
+                        <td>6.873</td>
+                        <td>6</td>
+                        <td>5.000</td>
+                        <td>5.453</td>
+                        <td>5.665</td>
+                        <td>4.203</td>
+                        <td>0.020</td>
+                        <td>5.885</td>
+                        <td>6.5</td>
+                        <td>5.5</td>
+                        <td>9</td>
+                        <td>8</td>
+                        <td>12</td>
+                        <td>3.636</td>
+                        <td>6</td>
+                        <td>5.414</td>
+                        <td>5.786</td>
+                        <td>8.377</td>
+                        <td>6.901</td>
+                        <td>7.196</td>
+                        <td></td>
+                        <td>6.855</td>
+                    </tr>
+                    <tr>
+                        <td>Derrick White</td>
+                        <td>29</td>
+                        <td>75.25</td>
+                        <td>79.25</td>
+                        <td>4.588</td>
+                        <td>4.5</td>
+                        <td>3.5</td>
+                        <td>5</td>
+                        <td>5.5</td>
+                        <td>3.5</td>
+                        <td>3.544</td>
+                        <td>87.7</td>
+                        <td>38.9</td>
+                        <td>8.9</td>
+                        <td>2.300</td>
+                        <td>6.886</td>
+                        <td>4.604</td>
+                        <td>6.331</td>
+                        <td>6</td>
+                        <td>5.500</td>
+                        <td>4.517</td>
+                        <td>4.933</td>
+                        <td>2.366</td>
+                        <td>0.177</td>
+                        <td>5.259</td>
+                        <td>7</td>
+                        <td>6</td>
+                        <td>7.5</td>
+                        <td>7.5</td>
+                        <td>10.7</td>
+                        <td>3.242</td>
+                        <td>7.5</td>
+                        <td>6.031</td>
+                        <td>4.631</td>
+                        <td>7.466</td>
+                        <td>6.695</td>
+                        <td>7.757</td>
+                        <td></td>
+                        <td>6.587</td>
+                    </tr>
+                    <tr>
+                        <td>Jaylen Brown</td>
+                        <td>27</td>
+                        <td>77.25</td>
+                        <td>83.75</td>
+                        <td>6.118</td>
+                        <td>7.5</td>
+                        <td>7</td>
+                        <td>5</td>
+                        <td>7.5</td>
+                        <td>6.5</td>
+                        <td>7.600</td>
+                        <td>76.5</td>
+                        <td>39.1</td>
+                        <td>9.6</td>
+                        <td>3.100</td>
+                        <td>6.158</td>
+                        <td>5.710</td>
+                        <td>6.406</td>
+                        <td>4</td>
+                        <td>7.000</td>
+                        <td>6.448</td>
+                        <td>5.310</td>
+                        <td>3.267</td>
+                        <td>0.486</td>
+                        <td>5.945</td>
+                        <td>4.5</td>
+                        <td>3.5</td>
+                        <td>7</td>
+                        <td>6</td>
+                        <td>15.6</td>
+                        <td>4.727</td>
+                        <td>6.5</td>
+                        <td>6.041</td>
+                        <td>6.144</td>
+                        <td>6.676</td>
+                        <td>6.026</td>
+                        <td>7.131</td>
+                        <td></td>
+                        <td>6.878</td>
+                    </tr>
+                    <tr>
+                        <td>Jayson Tatum</td>
+                        <td>25</td>
+                        <td>79.5</td>
+                        <td>83</td>
+                        <td>6.471</td>
+                        <td>7</td>
+                        <td>7</td>
+                        <td>6.5</td>
+                        <td>6.5</td>
+                        <td>7.5</td>
+                        <td>8.027</td>
+                        <td>85.2</td>
+                        <td>43.1</td>
+                        <td>12.1</td>
+                        <td>3.100</td>
+                        <td>8.238</td>
+                        <td>8.373</td>
+                        <td>8.212</td>
+                        <td>6</td>
+                        <td>7.000</td>
+                        <td>7.892</td>
+                        <td>7.666</td>
+                        <td>3.754</td>
+                        <td>0.994</td>
+                        <td>7.562</td>
+                        <td>7.5</td>
+                        <td>7</td>
+                        <td>6</td>
+                        <td>4.5</td>
+                        <td>21.3</td>
+                        <td>6.455</td>
+                        <td>5.5</td>
+                        <td>7.259</td>
+                        <td>6.850</td>
+                        <td>6.248</td>
+                        <td>6.936</td>
+                        <td>7.949</td>
+                        <td></td>
+                        <td>8.304</td>
+                    </tr>
+                    <tr>
+                        <td>Kristaps Porzingis</td>
+                        <td>28</td>
+                        <td>86.5</td>
+                        <td>90</td>
+                        <td>9.765</td>
+                        <td>4</td>
+                        <td>6</td>
+                        <td>4</td>
+                        <td>3.5</td>
+                        <td>5.5</td>
+                        <td>6.382</td>
+                        <td>85.6</td>
+                        <td>36.1</td>
+                        <td>8.4</td>
+                        <td>6.300</td>
+                        <td>5.881</td>
+                        <td>5.580</td>
+                        <td>5.773</td>
+                        <td>4</td>
+                        <td>6.000</td>
+                        <td>5.751</td>
+                        <td>4.843</td>
+                        <td>6.444</td>
+                        <td>0.369</td>
+                        <td>5.518</td>
+                        <td>7.5</td>
+                        <td>6</td>
+                        <td>3</td>
+                        <td>1</td>
+                        <td>20.6</td>
+                        <td>6.242</td>
+                        <td>6</td>
+                        <td>7.207</td>
+                        <td>7.984</td>
+                        <td>3.980</td>
+                        <td>5.331</td>
+                        <td>6.969</td>
+                        <td></td>
+                        <td>6.542</td>
+                    </tr>
+                    <tr>
+                        <td>Al Horford</td>
+                        <td>37</td>
+                        <td>80</td>
+                        <td>84.75</td>
+                        <td>7.000</td>
+                        <td>2</td>
+                        <td>6.5</td>
+                        <td>4</td>
+                        <td>1.5</td>
+                        <td>2.0</td>
+                        <td>2.792</td>
+                        <td>80.2</td>
+                        <td>39.8</td>
+                        <td>6.7</td>
+                        <td>5.400</td>
+                        <td>6.410</td>
+                        <td>4.143</td>
+                        <td>6.137</td>
+                        <td>6.5</td>
+                        <td>5.000</td>
+                        <td>4.034</td>
+                        <td>4.641</td>
+                        <td>5.451</td>
+                        <td>0.259</td>
+                        <td>4.974</td>
+                        <td>8.5</td>
+                        <td>7.5</td>
+                        <td>5</td>
+                        <td>1</td>
+                        <td>20.3</td>
+                        <td>6.152</td>
+                        <td>7</td>
+                        <td>6.346</td>
+                        <td>7.091</td>
+                        <td>4.625</td>
+                        <td>6.118</td>
+                        <td>7.184</td>
+                        <td></td>
+                        <td>6.245</td>
+                    </tr>
+                    <tr>
+                        <td>Tyrese Maxey</td>
+                        <td>23</td>
+                        <td>74</td>
+                        <td>79</td>
+                        <td>4.235</td>
+                        <td>8.5</td>
+                        <td>2</td>
+                        <td>7.5</td>
+                        <td>7</td>
+                        <td>6.0</td>
+                        <td>5.951</td>
+                        <td>85.7</td>
+                        <td>44.1</td>
+                        <td>9.6</td>
+                        <td>1.400</td>
+                        <td>8.326</td>
+                        <td>7.235</td>
+                        <td>8.206</td>
+                        <td>5.5</td>
+                        <td>5.500</td>
+                        <td>6.750</td>
+                        <td>6.582</td>
+                        <td>1.594</td>
+                        <td>0.046</td>
+                        <td>6.676</td>
+                        <td>3.5</td>
+                        <td>5</td>
+                        <td>5.5</td>
+                        <td>4.5</td>
+                        <td>9</td>
+                        <td>2.727</td>
+                        <td>5</td>
+                        <td>5.505</td>
+                        <td>3.289</td>
+                        <td>4.811</td>
+                        <td>5.651</td>
+                        <td>4.747</td>
+                        <td></td>
+                        <td>6.765</td>
+                    </tr>
+                    <tr>
+                        <td>De'Anthony Melton</td>
+                        <td>25</td>
+                        <td>74.25</td>
+                        <td>80.5</td>
+                        <td>4.647</td>
+                        <td>4</td>
+                        <td>2.5</td>
+                        <td>4.5</td>
+                        <td>5.5</td>
+                        <td>3.0</td>
+                        <td>2.907</td>
+                        <td>78.6</td>
+                        <td>41</td>
+                        <td>9.8</td>
+                        <td>3.100</td>
+                        <td>6.894</td>
+                        <td>4.310</td>
+                        <td>6.526</td>
+                        <td>5.5</td>
+                        <td>5.500</td>
+                        <td>4.238</td>
+                        <td>4.550</td>
+                        <td>3.110</td>
+                        <td>0.224</td>
+                        <td>4.970</td>
+                        <td>6.5</td>
+                        <td>6</td>
+                        <td>6.5</td>
+                        <td>7.5</td>
+                        <td>12.1</td>
+                        <td>3.667</td>
+                        <td>6.5</td>
+                        <td>5.878</td>
+                        <td>4.203</td>
+                        <td>6.971</td>
+                        <td>6.164</td>
+                        <td>6.719</td>
+                        <td></td>
+                        <td>6.115</td>
+                    </tr>
+                    <tr>
+                        <td>Kelly Oubre Jr.</td>
+                        <td>28</td>
+                        <td>77.75</td>
+                        <td>86.25</td>
+                        <td>6.824</td>
+                        <td>6.5</td>
+                        <td>4</td>
+                        <td>4</td>
+                        <td>6.5</td>
+                        <td>5.5</td>
+                        <td>6.037</td>
+                        <td>72.2</td>
+                        <td>37.8</td>
+                        <td>10.4</td>
+                        <td>4.200</td>
+                        <td>5.506</td>
+                        <td>4.671</td>
+                        <td>5.743</td>
+                        <td>3</td>
+                        <td>6.500</td>
+                        <td>5.347</td>
+                        <td>4.026</td>
+                        <td>4.067</td>
+                        <td>0.219</td>
+                        <td>4.961</td>
+                        <td>4</td>
+                        <td>3.5</td>
+                        <td>4.5</td>
+                        <td>4</td>
+                        <td>12.6</td>
+                        <td>3.818181818</td>
+                        <td>4</td>
+                        <td>5.785</td>
+                        <td>5.283</td>
+                        <td>4.735</td>
+                        <td>4.923</td>
+                        <td>4.683</td>
+                        <td></td>
+                        <td>5.567</td>
+                    </tr>
+                    <tr>
+                        <td>Tobias Harris</td>
+                        <td>31</td>
+                        <td>78.5</td>
+                        <td>83</td>
+                        <td>6.235</td>
+                        <td>4.5</td>
+                        <td>5.5</td>
+                        <td>5</td>
+                        <td>4.5</td>
+                        <td>6.5</td>
+                        <td>5.534</td>
+                        <td>88.2</td>
+                        <td>37.6</td>
+                        <td>6.1</td>
+                        <td>3.400</td>
+                        <td>6.353</td>
+                        <td>5.452</td>
+                        <td>6.008</td>
+                        <td>4.5</td>
+                        <td>5.500</td>
+                        <td>5.448</td>
+                        <td>4.950</td>
+                        <td>3.502</td>
+                        <td>-0.002</td>
+                        <td>5.483</td>
+                        <td>4</td>
+                        <td>5.5</td>
+                        <td>4.5</td>
+                        <td>3.5</td>
+                        <td>17</td>
+                        <td>5.151515152</td>
+                        <td>5.5</td>
+                        <td>5.581</td>
+                        <td>5.561</td>
+                        <td>4.603</td>
+                        <td>4.895</td>
+                        <td>5.218</td>
+                        <td></td>
+                        <td>6.048</td>
+                    </tr>
+                    <tr>
+                        <td>Nicolas Batum</td>
+                        <td>35</td>
+                        <td>80.25</td>
+                        <td>85</td>
+                        <td>7.118</td>
+                        <td>2.5</td>
+                        <td>6</td>
+                        <td>2</td>
+                        <td>3.5</td>
+                        <td>2.0</td>
+                        <td>3.017</td>
+                        <td>70.7</td>
+                        <td>43.8</td>
+                        <td>7.2</td>
+                        <td>4.300</td>
+                        <td>6.868</td>
+                        <td>4.186</td>
+                        <td>6.592</td>
+                        <td>6.5</td>
+                        <td>5.500</td>
+                        <td>4.265</td>
+                        <td>4.890</td>
+                        <td>4.412</td>
+                        <td>0.447</td>
+                        <td>5.187</td>
+                        <td>6</td>
+                        <td>8</td>
+                        <td>5</td>
+                        <td>4</td>
+                        <td>12.6</td>
+                        <td>3.818181818</td>
+                        <td>6.5</td>
+                        <td>6.310</td>
+                        <td>6.508</td>
+                        <td>5.426</td>
+                        <td>5.662</td>
+                        <td>6.722</td>
+                        <td></td>
+                        <td>6.256</td>
+                    </tr>
+                    <tr>
+                        <td>Joel Embiid</td>
+                        <td>29</td>
+                        <td>83.75</td>
+                        <td>89</td>
+                        <td>8.882</td>
+                        <td>6</td>
+                        <td>9</td>
+                        <td>6</td>
+                        <td>6.5</td>
+                        <td>7.5</td>
+                        <td>9.358</td>
+                        <td>85.2</td>
+                        <td>38.9</td>
+                        <td>4.9</td>
+                        <td>7.500</td>
+                        <td>6.397</td>
+                        <td>7.205</td>
+                        <td>6.661</td>
+                        <td>6</td>
+                        <td>4.500</td>
+                        <td>9.935</td>
+                        <td>8.917</td>
+                        <td>9.709</td>
+                        <td>-0.136</td>
+                        <td>8.514</td>
+                        <td>8</td>
+                        <td>6.5</td>
+                        <td>4</td>
+                        <td>1.5</td>
+                        <td>28.9</td>
+                        <td>8.757575758</td>
+                        <td>6</td>
+                        <td>7.979</td>
+                        <td>8.765</td>
+                        <td>4.782</td>
+                        <td>6.197</td>
+                        <td>8.533</td>
+                        <td></td>
+                        <td>9.238</td>
+                    </tr>
+                    <tr>
+                        <td>Paul Reed</td>
+                        <td>24</td>
+                        <td>81</td>
+                        <td>85.5</td>
+                        <td>7.412</td>
+                        <td>2</td>
+                        <td>6.5</td>
+                        <td>1.5</td>
+                        <td>6.5</td>
+                        <td>1.0</td>
+                        <td>3.706</td>
+                        <td>72.8</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>15.900</td>
+                        <td>2.670</td>
+                        <td>1.638</td>
+                        <td>0.000</td>
+                        <td>5</td>
+                        <td>6.000</td>
+                        <td>1.924</td>
+                        <td>2.096</td>
+                        <td>13.351</td>
+                        <td>1.010</td>
+                        <td>2.807</td>
+                        <td>6.5</td>
+                        <td>6</td>
+                        <td>4.5</td>
+                        <td>2</td>
+                        <td>21.6</td>
+                        <td>6.545454545</td>
+                        <td>6.5</td>
+                        <td>6.758</td>
+                        <td>6.914</td>
+                        <td>4.576</td>
+                        <td>5.208</td>
+                        <td>6.895</td>
+                        <td></td>
+                        <td>4.949</td>
+                    </tr>
+                    <tr>
+                        <td>Jalen Brunson</td>
+                        <td>27</td>
+                        <td>73</td>
+                        <td>76</td>
+                        <td>3.294</td>
+                        <td>7.5</td>
+                        <td>5.5</td>
+                        <td>8.5</td>
+                        <td>3</td>
+                        <td>8.5</td>
+                        <td>5.855</td>
+                        <td>84.1</td>
+                        <td>43.9</td>
+                        <td>8.3</td>
+                        <td>1.800</td>
+                        <td>8.014</td>
+                        <td>7.273</td>
+                        <td>8.096</td>
+                        <td>7.5</td>
+                        <td>3.000</td>
+                        <td>6.692</td>
+                        <td>7.424</td>
+                        <td>2.151</td>
+                        <td>-1.187</td>
+                        <td>7.038</td>
+                        <td>5.5</td>
+                        <td>6</td>
+                        <td>5.5</td>
+                        <td>4</td>
+                        <td>10.4</td>
+                        <td>3.151515152</td>
+                        <td>5</td>
+                        <td>4.910</td>
+                        <td>4.497</td>
+                        <td>5.150</td>
+                        <td>6.125</td>
+                        <td>4.847</td>
+                        <td></td>
+                        <td>7.062</td>
+                    </tr>
+                    <tr>
+                        <td>Quentin Grimes</td>
+                        <td>23</td>
+                        <td>76</td>
+                        <td>79.5</td>
+                        <td>4.824</td>
+                        <td>5.5</td>
+                        <td>4.5</td>
+                        <td>3</td>
+                        <td>5.5</td>
+                        <td>2.0</td>
+                        <td>3.162</td>
+                        <td>74.1</td>
+                        <td>44</td>
+                        <td>10.6</td>
+                        <td>2.400</td>
+                        <td>7.530</td>
+                        <td>4.290</td>
+                        <td>7.163</td>
+                        <td>4</td>
+                        <td>6.000</td>
+                        <td>4.514</td>
+                        <td>4.265</td>
+                        <td>2.362</td>
+                        <td>0.297</td>
+                        <td>4.879</td>
+                        <td>5.5</td>
+                        <td>5.5</td>
+                        <td>6</td>
+                        <td>5.5</td>
+                        <td>9.4</td>
+                        <td>2.848484848</td>
+                        <td>6</td>
+                        <td>5.516</td>
+                        <td>4.829</td>
+                        <td>5.985</td>
+                        <td>5.906</td>
+                        <td>5.849</td>
+                        <td></td>
+                        <td>5.823</td>
+                    </tr>
+                    <tr>
+                        <td>Donte DiVincenzo</td>
+                        <td>27</td>
+                        <td>75.5</td>
+                        <td>78</td>
+                        <td>4.353</td>
+                        <td>4.5</td>
+                        <td>3.5</td>
+                        <td>3.5</td>
+                        <td>5</td>
+                        <td>2.5</td>
+                        <td>2.551</td>
+                        <td>79.6</td>
+                        <td>42</td>
+                        <td>11.3</td>
+                        <td>4.000</td>
+                        <td>7.404</td>
+                        <td>4.150</td>
+                        <td>6.829</td>
+                        <td>5</td>
+                        <td>7.000</td>
+                        <td>4.139</td>
+                        <td>4.370</td>
+                        <td>3.965</td>
+                        <td>1.065</td>
+                        <td>4.880</td>
+                        <td>5.5</td>
+                        <td>5</td>
+                        <td>6.5</td>
+                        <td>6.5</td>
+                        <td>12.9</td>
+                        <td>3.909090909</td>
+                        <td>6</td>
+                        <td>5.199</td>
+                        <td>4.251</td>
+                        <td>6.446</td>
+                        <td>5.809</td>
+                        <td>5.751</td>
+                        <td></td>
+                        <td>5.797</td>
+                    </tr>
+                    <tr>
+                        <td>OG Anunoby</td>
+                        <td>26</td>
+                        <td>78.25</td>
+                        <td>86.25</td>
+                        <td>6.941</td>
+                        <td>5.5</td>
+                        <td>7</td>
+                        <td>3.5</td>
+                        <td>6</td>
+                        <td>4.5</td>
+                        <td>5.971</td>
+                        <td>78.8</td>
+                        <td>42.9</td>
+                        <td>8.1</td>
+                        <td>3.900</td>
+                        <td>7.308</td>
+                        <td>5.904</td>
+                        <td>7.101</td>
+                        <td>3.5</td>
+                        <td>5.500</td>
+                        <td>6.061</td>
+                        <td>4.937</td>
+                        <td>4.014</td>
+                        <td>0.042</td>
+                        <td>5.626</td>
+                        <td>6</td>
+                        <td>5.5</td>
+                        <td>6.5</td>
+                        <td>5.5</td>
+                        <td>11.7</td>
+                        <td>3.545454545</td>
+                        <td>6.5</td>
+                        <td>6.518</td>
+                        <td>6.791</td>
+                        <td>6.620</td>
+                        <td>6.257</td>
+                        <td>7.562</td>
+                        <td></td>
+                        <td>6.777</td>
+                    </tr>
+                    <tr>
+                        <td>Josh Hart</td>
+                        <td>28</td>
+                        <td>75.75</td>
+                        <td>80.25</td>
+                        <td>4.941</td>
+                        <td>5</td>
+                        <td>6.5</td>
+                        <td>3.5</td>
+                        <td>5.5</td>
+                        <td>3.5</td>
+                        <td>4.221</td>
+                        <td>78.2</td>
+                        <td>39.3</td>
+                        <td>4.9</td>
+                        <td>5.100</td>
+                        <td>5.980</td>
+                        <td>3.934</td>
+                        <td>5.738</td>
+                        <td>5.5</td>
+                        <td>5.500</td>
+                        <td>4.422</td>
+                        <td>4.575</td>
+                        <td>5.125</td>
+                        <td>0.286</td>
+                        <td>5.033</td>
+                        <td>6.5</td>
+                        <td>6.5</td>
+                        <td>5.5</td>
+                        <td>5</td>
+                        <td>21.4</td>
+                        <td>6.484848485</td>
+                        <td>6.5</td>
+                        <td>5.960</td>
+                        <td>5.791</td>
+                        <td>5.953</td>
+                        <td>6.079</td>
+                        <td>6.923</td>
+                        <td></td>
+                        <td>6.211</td>
+                    </tr>
+                </tbody>
             </table>
-            <br>
-            <br>
-            <br>
-            <br>
-        </section>
-        <footer>disclaimer clause
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-        </footer>
+        </div>
+        
+        <br>
+        <br>
+        <br>
+        <br>
+    </section>
+    <footer>disclaimer clause
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    </footer>
 
-    </body>    
+</body>
+
 </html>

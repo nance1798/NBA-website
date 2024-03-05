@@ -81,15 +81,43 @@ li {
 }
 
 table {
-    background-color: gray;
-    font-size: 18px;
-
-}
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td,
+  th {
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #ddd;
+  }
+  
+  
+  /* The scrollable part */
+  
+  .scrollable {
+    height: 500px;
+    width: 95%;
+    margin-right: 2.5%;
+    margin-left: 2.5%;
+    overflow-y: scroll;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  th {
+    z-index: 2;
+    top: 0;
+  }
 
 h1 {
     display: inline;
     padding: 15px;
 }
+
 
 p {
     display: inline;
