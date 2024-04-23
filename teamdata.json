@@ -1,0 +1,274 @@
+{
+    "data": [
+        {
+            "Name": "Boston Celtics",
+            "Wins": 59.0,
+            "Losses": 16.0,
+            "Offense": 124.41,
+            "Defense": 112.59,
+            "Rating": 11.82,
+            "Projected Wins": 64
+        },
+        {
+            "Name": "Oklahoma City Thunder",
+            "Wins": 52.0,
+            "Losses": 23.0,
+            "Offense": 120.74,
+            "Defense": 113.54,
+            "Rating": 7.2,
+            "Projected Wins": 57
+        },
+        {
+            "Name": "Minnesota Timberwolves",
+            "Wins": 52.0,
+            "Losses": 23.0,
+            "Offense": 116.67,
+            "Defense": 109.76,
+            "Rating": 6.91,
+            "Projected Wins": 57
+        },
+        {
+            "Name": "Denver Nuggets",
+            "Wins": 53.0,
+            "Losses": 23.0,
+            "Offense": 119.36,
+            "Defense": 114.41,
+            "Rating": 4.95,
+            "Projected Wins": 57
+        },
+        {
+            "Name": "New Orleans Pelicans",
+            "Wins": 45.0,
+            "Losses": 30.0,
+            "Offense": 118.41,
+            "Defense": 113.47,
+            "Rating": 4.93,
+            "Projected Wins": 49
+        },
+        {
+            "Name": "New York Knicks",
+            "Wins": 44.0,
+            "Losses": 31.0,
+            "Offense": 118.56,
+            "Defense": 113.81,
+            "Rating": 4.75,
+            "Projected Wins": 48
+        },
+        {
+            "Name": "Los Angeles Clippers",
+            "Wins": 47.0,
+            "Losses": 28.0,
+            "Offense": 120.58,
+            "Defense": 117.28,
+            "Rating": 3.3,
+            "Projected Wins": 51
+        },
+        {
+            "Name": "Milwaukee Bucks",
+            "Wins": 47.0,
+            "Losses": 28.0,
+            "Offense": 119.81,
+            "Defense": 116.37,
+            "Rating": 3.45,
+            "Projected Wins": 51
+        },
+        {
+            "Name": "Cleveland Cavaliers",
+            "Wins": 46.0,
+            "Losses": 30.0,
+            "Offense": 116.42,
+            "Defense": 113.41,
+            "Rating": 3.01,
+            "Projected Wins": 49
+        },
+        {
+            "Name": "Golden State Warriors",
+            "Wins": 41.0,
+            "Losses": 34.0,
+            "Offense": 118.41,
+            "Defense": 116.18,
+            "Rating": 2.24,
+            "Projected Wins": 45
+        },
+        {
+            "Name": "Dallas Mavericks",
+            "Wins": 45.0,
+            "Losses": 30.0,
+            "Offense": 119.11,
+            "Defense": 116.92,
+            "Rating": 2.19,
+            "Projected Wins": 49
+        },
+        {
+            "Name": "Phoenix Suns",
+            "Wins": 44.0,
+            "Losses": 31.0,
+            "Offense": 119.2,
+            "Defense": 116.45,
+            "Rating": 2.75,
+            "Projected Wins": 48
+        },
+        {
+            "Name": "Indiana Pacers",
+            "Wins": 43.0,
+            "Losses": 33.0,
+            "Offense": 121.32,
+            "Defense": 118.88,
+            "Rating": 2.45,
+            "Projected Wins": 46
+        },
+        {
+            "Name": "Philadelphia 76ers",
+            "Wins": 41.0,
+            "Losses": 35.0,
+            "Offense": 117.9,
+            "Defense": 115.73,
+            "Rating": 2.1,
+            "Projected Wins": 44
+        },
+        {
+            "Name": "Orlando Magic",
+            "Wins": 44.0,
+            "Losses": 31.0,
+            "Offense": 114.29,
+            "Defense": 111.98,
+            "Rating": 2.31,
+            "Projected Wins": 48
+        },
+        {
+            "Name": "Sacramento Kings",
+            "Wins": 44.0,
+            "Losses": 31.0,
+            "Offense": 117.95,
+            "Defense": 116.63,
+            "Rating": 1.32,
+            "Projected Wins": 47
+        },
+        {
+            "Name": "Houston Rockets",
+            "Wins": 38.0,
+            "Losses": 37.0,
+            "Offense": 115.09,
+            "Defense": 113.59,
+            "Rating": 1.5,
+            "Projected Wins": 41
+        },
+        {
+            "Name": "Miami Heat",
+            "Wins": 42.0,
+            "Losses": 33.0,
+            "Offense": 114.83,
+            "Defense": 113.46,
+            "Rating": 1.37,
+            "Projected Wins": 45
+        },
+        {
+            "Name": "Los Angeles Lakers",
+            "Wins": 43.0,
+            "Losses": 33.0,
+            "Offense": 116.44,
+            "Defense": 116.18,
+            "Rating": 0.26,
+            "Projected Wins": 46
+        },
+        {
+            "Name": "Atlanta Hawks",
+            "Wins": 35.0,
+            "Losses": 40.0,
+            "Offense": 119.18,
+            "Defense": 120.31,
+            "Rating": -1.13,
+            "Projected Wins": 38
+        },
+        {
+            "Name": "Chicago Bulls",
+            "Wins": 36.0,
+            "Losses": 40.0,
+            "Offense": 115.65,
+            "Defense": 117.47,
+            "Rating": -1.82,
+            "Projected Wins": 38
+        },
+        {
+            "Name": "Brooklyn Nets",
+            "Wins": 29.0,
+            "Losses": 47.0,
+            "Offense": 114.61,
+            "Defense": 117.34,
+            "Rating": -2.73,
+            "Projected Wins": 31
+        },
+        {
+            "Name": "Utah Jazz",
+            "Wins": 29.0,
+            "Losses": 47.0,
+            "Offense": 116.6,
+            "Defense": 121.26,
+            "Rating": -4.66,
+            "Projected Wins": 31
+        },
+        {
+            "Name": "Toronto Raptors",
+            "Wins": 23.0,
+            "Losses": 52.0,
+            "Offense": 113.6,
+            "Defense": 119.52,
+            "Rating": -5.92,
+            "Projected Wins": 25
+        },
+        {
+            "Name": "San Antonio Spurs",
+            "Wins": 18.0,
+            "Losses": 58.0,
+            "Offense": 111.03,
+            "Defense": 117.96,
+            "Rating": -6.93,
+            "Projected Wins": 19
+        },
+        {
+            "Name": "Memphis Grizzlies",
+            "Wins": 25.0,
+            "Losses": 50.0,
+            "Offense": 108.12,
+            "Defense": 115.46,
+            "Rating": -7.34,
+            "Projected Wins": 26
+        },
+        {
+            "Name": "Portland Trail Blazers",
+            "Wins": 19.0,
+            "Losses": 56.0,
+            "Offense": 109.94,
+            "Defense": 119.02,
+            "Rating": -9.09,
+            "Projected Wins": 20
+        },
+        {
+            "Name": "Detroit Pistons",
+            "Wins": 13.0,
+            "Losses": 62.0,
+            "Offense": 110.99,
+            "Defense": 119.76,
+            "Rating": -8.77,
+            "Projected Wins": 14
+        },
+        {
+            "Name": "Washington Wizards",
+            "Wins": 15.0,
+            "Losses": 61.0,
+            "Offense": 110.84,
+            "Defense": 120.15,
+            "Rating": -9.31,
+            "Projected Wins": 16
+        },
+        {
+            "Name": "Charlotte Hornets",
+            "Wins": 18.0,
+            "Losses": 57.0,
+            "Offense": 109.99,
+            "Defense": 121.0,
+            "Rating": -11.02,
+            "Projected Wins": 19
+        }
+    ]
+}
