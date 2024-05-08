@@ -18,7 +18,7 @@ data.forEach(function(item) {
 // Now you have tableData array populated with data from JSON
 
 // Now you can populate your HTML table dynamically
-var table = document.getElementById('myTable'); // Assuming your table has an ID 'myTable'
+var table = document.getElementById("myTable"); // Assuming your table has an ID 'myTable'
 
 // Loop through the tableData array and populate the HTML table
 tableData.forEach(function(rowData) {
